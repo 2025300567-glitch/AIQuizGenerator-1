@@ -19,9 +19,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget bodyContainer() {
     return Container(
+      padding: EdgeInsets.all(8.0),
       child: Form(
         key: _formkey,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextFormField(
               validator: (value) {
