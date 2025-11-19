@@ -14,7 +14,7 @@ class AiController extends GetxController {
     try {
       log("AiController :: createQuiz()");
       final model = GenerativeModel(
-        model: 'gemini-2.0-flash',
+        model: 'gemini-2.5-flash',
         apiKey: GeminiConstants.API_KEY,
       );
     } catch (e) {
