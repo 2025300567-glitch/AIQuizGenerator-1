@@ -72,13 +72,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  if (_formkey.currentState!.validate()) {
-                    // Process data.
-                  }
-                },
-                child: Text("GENERATE QUIZ"),
+              const SizedBox(height: 20.0),
+              SizedBox(
+                width: double.infinity,
+                height: 50.0,
+                child: PrimaryButton(
+                  onPressed: () {
+                    if (_formkey.currentState!.validate()) {
+                      // Process data.
+                    }
+                  },
+                  text: "GENERATE QUIZ",
+                ),
               ),
             ],
           ),
